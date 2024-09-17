@@ -41,61 +41,61 @@ export default function UsersList() {
 
   return <>
     <table className={styles.table}>
-      <thead>
-      <tr className={styles.tr}>
-        <th className={styles.th}>
-          Name
-          {showFilters && (
-            <input
-              type="text"
-              name="name"
-              placeholder="Search name"
-              value={filters.name}
-              onChange={handleFilterChange}
-              className={styles.input}
-            />
-          )}
-        </th>
-        <th className={styles.th}>
-          Username
-          {showFilters && (
-            <input
-              type="text"
-              name="username"
-              placeholder="Search username"
-              value={filters.username}
-              onChange={handleFilterChange}
-              className={styles.input}
-            />
-          )}
-        </th>
-        <th className={styles.th}>
-          Email
-          {showFilters && (
-            <input
-              type="text"
-              name="email"
-              placeholder="Search e-mail"
-              value={filters.email}
-              onChange={handleFilterChange}
-              className={styles.input}
-            />
-          )}
-        </th>
-        <th className={styles.th}>
-          Phone
-          {showFilters && (
-            <input
-              type="text"
-              name="phone"
-              placeholder="Search phone"
-              value={filters.phone}
-              onChange={handleFilterChange}
-              className={styles.input}
-            />
-          )}
-        </th>
-      </tr>
+      <thead className={styles.thead}>
+        <tr className={styles.tr}>
+          <th className={styles.th}>
+            Name
+            {showFilters && (
+              <input
+                type="text"
+                name="name"
+                placeholder="Search name"
+                value={filters.name}
+                onChange={handleFilterChange}
+                className={styles.input}
+              />
+            )}
+          </th>
+          <th className={styles.th}>
+            Username
+            {showFilters && (
+              <input
+                type="text"
+                name="username"
+                placeholder="Search username"
+                value={filters.username}
+                onChange={handleFilterChange}
+                className={styles.input}
+              />
+            )}
+          </th>
+          <th className={styles.th}>
+            Email
+            {showFilters && (
+              <input
+                type="text"
+                name="email"
+                placeholder="Search e-mail"
+                value={filters.email}
+                onChange={handleFilterChange}
+                className={styles.input}
+              />
+            )}
+          </th>
+          <th className={styles.th}>
+            Phone
+            {showFilters && (
+              <input
+                type="text"
+                name="phone"
+                placeholder="Search phone"
+                value={filters.phone}
+                onChange={handleFilterChange}
+                className={styles.input}
+              />
+            )}
+          </th>
+        </tr>
       </thead>
       <tbody>
       {filteredUsers.map(user => (

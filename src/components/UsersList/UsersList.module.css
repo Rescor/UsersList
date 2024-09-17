@@ -5,6 +5,10 @@
   border-collapse: collapse;
 }
 
+.thead tr th {
+  cursor: default;
+}
+
 .th, .td {
   padding: 12px 15px;
 }
@@ -19,6 +23,10 @@
   background-color: #3f453f;
 }
 
+.tr {
+  cursor: pointer;
+}
+
 .tr:nth-child(even) {
   background-color: rgba(60, 94, 24, 0.4);
 }
@@ -30,7 +38,6 @@
 .tr:hover {
   background-color: #ddd;
   color: #596559;
-  cursor: pointer;
   transition: all 250ms ease;
 }
 
